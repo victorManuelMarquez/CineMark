@@ -133,6 +133,7 @@ public class Test {
         System.out.print("Ingrese una opción »");
         String valor = scanner.next();
         switch (valor) {
+            case "0" -> System.out.println("Cerrando sesión...");
             case "1" -> crearCliente(modulo, scanner);
             case "2" -> nuevoUsuario(modulo, scanner);
             case "3" -> crearTarjeta(modulo, scanner);
@@ -184,7 +185,7 @@ public class Test {
                 System.out.println("FUNCIONES");
                 listarFunciones(modulo.getConexion());
             }
-            default -> System.out.printf("No existe la opción %s", valor);
+            default -> System.out.printf("No existe la opción %s\n", valor);
         }
         return !valor.equals("0");
     }
@@ -218,6 +219,7 @@ public class Test {
         System.out.print("Ingrese una opción »");
         String valor = scanner.next();
         switch (valor) {
+            case "0" -> System.out.println("Cerrando sesión...");
             case "1" -> crearCliente(modulo, scanner);
             case "2" -> crearTarjeta(modulo, scanner);
             case "3" -> {
@@ -252,7 +254,7 @@ public class Test {
                 System.out.println("FUNCIONES");
                 listarFunciones(modulo.getConexion());
             }
-            default -> System.out.printf("No existe la opción %s", valor);
+            default -> System.out.printf("No existe la opción %s\n", valor);
         }
         return !valor.equals("0");
     }
@@ -277,6 +279,7 @@ public class Test {
         System.out.print("Ingrese una opción »");
         String valor = scanner.next();
         switch (valor) {
+            case "0" -> System.out.println("Cerrando sesión...");
             case "1" -> crearCliente(modulo, scanner);
             case "2" -> crearTarjeta(modulo, scanner);
             case "3" -> {
@@ -296,7 +299,7 @@ public class Test {
                 System.out.println("FUNCIONES EN VENTA");
                 listarFuncionesEnVenta(modulo.getConexion());
             }
-            default -> System.out.printf("No existe la opción %s", valor);
+            default -> System.out.printf("No existe la opción %s\n", valor);
         }
         return !valor.equals("0");
     }
@@ -321,6 +324,7 @@ public class Test {
         System.out.print("Ingrese una opción »");
         String valor = scanner.next();
         switch (valor) {
+            case "0" -> System.out.println("Cerrando sesión...");
             case "1" -> nuevoUsuario(modulo, scanner);
             case "2" -> nuevaReserva(modulo, scanner);
             case "3" -> actualizarUsuario(modulo, scanner);
@@ -334,7 +338,7 @@ public class Test {
                 System.out.println("FUNCIONES EN VENTA");
                 listarFuncionesEnVenta(modulo.getConexion());
             }
-            default -> System.out.printf("No existe la opción %s", valor);
+            default -> System.out.printf("No existe la opción %s\n", valor);
         }
         return !valor.equals("0");
     }
@@ -345,8 +349,8 @@ public class Test {
      * @return fecha de nacimiento.
      */
     protected static Date fechaNacRandom() {
-        long anios = 31536000000L * (new Random()).nextLong(18, 101);
-        return new Date(System.currentTimeMillis()-anios);
+        long years = 31536000000L * (new Random()).nextLong(18, 101);
+        return new Date(System.currentTimeMillis()-years);
     }
 
     /**
