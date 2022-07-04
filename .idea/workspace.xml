@@ -4,86 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bbba397-4e1f-4f0b-90b0-3b79bac61dc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/code/cinemark_bd (copia).sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/code/cinemark_bd.backup.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/code/cinemark_bd.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/code/cinemark_bd_dump.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/code/esquema.schemaxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/snapshots/DER.bmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ST4-4.0.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/annotations-20.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/antlr-runtime-3.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/antlr4-4.5.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ascii-utf-themes-0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/asciitable-0.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/char-translation-0.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-lang3-3.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.29.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/skb-interfaces-0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/Conexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/Consulta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ConsultaObtenerVersionSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ConsultaPreparada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoActualizarCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoActualizarFuncion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoActualizarPelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoActualizarReserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoActualizarSala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoActualizarTarjeta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoActualizarTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoActualizarUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoAgregarCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoAgregarFuncion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoAgregarPelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoAgregarReserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoAgregarSala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoAgregarTarjeta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoAgregarTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoAgregarUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoAlmacenado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoBorrarCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoBorrarFuncion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoBorrarPelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoBorrarReserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoBorrarSala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoBorrarTarjeta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoBorrarTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoBorrarUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoListarFunciones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoListarFuncionesEnVenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoListarPeliculas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoListarSalas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoLogearUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoPurgarCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoPurgarFuncion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoPurgarPelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoPurgarSala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/ProcedimientoVerificarConsumo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/consulta/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/conexion/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/main/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/main/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/Clientes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/Funciones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/ModuloAdministrador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/ModuloBoletero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/ModuloCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/ModuloGerente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/Peliculas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/Reservas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/Salas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/Tarjetas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/Tickets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/Usuarios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cinemark/modulo/package-info.java" afterDir="false" />
-    </list>
+    <list default="true" id="8bbba397-4e1f-4f0b-90b0-3b79bac61dc5" name="Changes" comment="Sistema inicial" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,6 +57,14 @@
       <option name="presentableId" value="Default" />
       <updated>1656909663129</updated>
     </task>
+    <task id="LOCAL-00001" summary="Sistema inicial">
+      <created>1656910472877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656910472877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,5 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Sistema inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistema inicial" />
   </component>
 </project>
