@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="utf8mb4" collation="utf8mb4_general_ci">cinemark_bd</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="cliente" view="colnames">
+<left>394</left>
+<top>257</top>
+<width>136</width>
+<height>129</height>
+<sql_create_table>CREATE TABLE `cliente` (
+  `dni` varchar(10) NOT NULL,
+  `fechaNac` date NOT NULL,
+  `alta` date NOT NULL,
+  `activo` tinyint(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`dni`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4</sql_create_table>
+</table>
+<table name="descuento" view="colnames">
+<left>157</left>
+<top>377</top>
+<width>136</width>
+<height>113</height>
+<sql_create_table>CREATE TABLE `descuento` (
+  `dia` tinyint(4) NOT NULL DEFAULT 1,
+  `porcentaje` float NOT NULL DEFAULT 0,
+  `modificado` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`dia`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4</sql_create_table>
+</table>
+<table name="funcion" view="colnames">
+<left>326</left>
+<top>412</top>
+<width>136</width>
+<height>161</height>
+<sql_create_table>CREATE TABLE `funcion` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pelicula_id` int(11) NOT NULL,
+  `sala_id` int(11) NOT NULL,
+  `inicio` datetime NOT NULL,
+  `fin` datetime NOT NULL,
+  `precio` float NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `pelicula_id` (`pelicula_id`),
+  KEY `sala_id` (`sala_id`),
+  CONSTRAINT `funcion_ibfk_1` FOREIGN KEY (`pelicula_id`) REFERENCES `pelicula` (`id`) ON UPDATE CASCADE,
+  CONSTRAINT `funcion_ibfk_2` FOREIGN KEY (`sala_id`) REFERENCES `sala` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4</sql_create_table>
+</table>
+<table name="pelicula" view="colnames">
+<left>158</left>
+<top>509</top>
+<width>136</width>
+<height>193</height>
+<sql_create_table>CREATE TABLE `pelicula` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `imdb` varchar(20) NOT NULL,
+  `titulo` varchar(180) NOT NULL,
+  `director` varchar(180) NOT NULL,
+  `reparto` varchar(256) NOT NULL,
+  `fechaEstreno` date NOT NULL,
+  `duracion` smallint(6) NOT NULL,
+  `cartelera` tinyint(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `imdb` (`imdb`),
+  KEY `idx_fecha_estreno` (`fechaEstreno` DESC)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4</sql_create_table>
+</table>
+<table name="reserva" view="colnames">
+<left>562</left>
+<top>410</top>
+<width>136</width>
+<height>129</height>
+<sql_create_table>CREATE TABLE `reserva` (
+  `dni_cliente` varchar(11) NOT NULL,
+  `funcion_id` int(11) NOT NULL,
+  `butacas` tinyint(4) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`dni_cliente`),
+  KEY `funcion_id` (`funcion_id`),
+  CONSTRAINT `reserva_ibfk_1` FOREIGN KEY (`funcion_id`) REFERENCES `funcion` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4</sql_create_table>
+</table>
+<table name="sala" view="colnames">
+<left>563</left>
+<top>571</top>
+<width>136</width>
+<height>129</height>
+<sql_create_table>CREATE TABLE `sala` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(120) NOT NULL,
+  `capacidad` smallint(6) NOT NULL,
+  `habilitada` tinyint(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `nombre_sala` (`nombre`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4</sql_create_table>
+</table>
+<table name="tarjeta" view="colnames">
+<left>159</left>
+<top>33</top>
+<width>136</width>
+<height>148</height>
+<sql_create_table>CREATE TABLE `tarjeta` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `alta` datetime NOT NULL,
+  `baja` datetime NOT NULL,
+  `dni_cliente` varchar(10) NOT NULL,
+  `habilitada` tinyint(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `dni_cliente` (`dni_cliente`),
+  CONSTRAINT `tarjeta_ibfk_1` FOREIGN KEY (`dni_cliente`) REFERENCES `cliente` (`dni`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4</sql_create_table>
+</table>
+<table name="ticket" view="colnames">
+<left>159</left>
+<top>194</top>
+<width>136</width>
+<height>161</height>
+<sql_create_table>CREATE TABLE `ticket` (
+  `codigo` varchar(11) NOT NULL,
+  `funcion_id` int(11) NOT NULL,
+  `butaca` varchar(20) NOT NULL,
+  `fechaVenta` timestamp NOT NULL DEFAULT current_timestamp(),
+  `dni_cliente` varchar(10) NOT NULL,
+  `monto` float NOT NULL,
+  PRIMARY KEY (`codigo`),
+  KEY `funcion_id` (`funcion_id`),
+  KEY `dni_cliente` (`dni_cliente`),
+  KEY `indx_fecha_de_venta` (`fechaVenta` DESC),
+  CONSTRAINT `ticket_ibfk_1` FOREIGN KEY (`funcion_id`) REFERENCES `funcion` (`id`) ON UPDATE CASCADE,
+  CONSTRAINT `ticket_ibfk_2` FOREIGN KEY (`dni_cliente`) REFERENCES `cliente` (`dni`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4</sql_create_table>
+</table>
+<table name="usuario" view="colnames">
+<left>595</left>
+<top>257</top>
+<width>136</width>
+<height>129</height>
+<sql_create_table>CREATE TABLE `usuario` (
+  `dni_cliente` varchar(11) NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `clave` varchar(8) NOT NULL,
+  `modulo` varchar(60) NOT NULL,
+  PRIMARY KEY (`dni_cliente`),
+  UNIQUE KEY `nombre_usuario` (`nombre`),
+  CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`dni_cliente`) REFERENCES `cliente` (`dni`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>
