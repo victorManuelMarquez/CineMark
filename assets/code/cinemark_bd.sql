@@ -197,7 +197,6 @@ FROM
   ) 
 WHERE DAY(funcion.fin) = DAY(NOW()) 
   AND MONTH(funcion.`fin`) = MONTH(NOW()) 
-GROUP BY sala.nombre 
 ORDER BY funcion.inicio) ;
 
 DROP VIEW IF EXISTS reservas ;
