@@ -24,11 +24,21 @@ Notas:
 <ol>
   <li>Se omitió la solución via web para la parte de los usuarios y reservas en toda su extensión, por falta de tiempo. Aún así se desarrollo un mínimo de funciones para ello (experimental).</li>
   <li>La base de datos fue desarrollada teniendo en mente solo una única sucursal de cine, pero existe la posibilidad de expandirla o agregar más característcias para ello.</li>
+  <li>La tabla de descuentos por día quedó inconclusa, simplemente por descudio. Pero puede ser implementable en una futura versión.</li>
+  <li>Olvidé agregar la característica 2D/3D en la tabla de películas, además de repercutir en el precio dicha característica.</li>
 </ol>
 
 Solución:
 
 El sistema al final fue realizado con una interfaz via consola de comandos e ingresando mediante login para acceder a la info, almacenada en la base de datos.
 
-Capturas:
+<h3 align="center">Capturas:</h3>
 
+<h4>Menú del Administrador en consola.</h4>
+<img src="https://github.com/victorManuelMarquez/CineMark/blob/master/assets/snapshots/menu-admin.png" alt="Menú del Administrador en consola."/>
+<h4>Menú del Gerente en consola.</h4>
+<img src="https://github.com/victorManuelMarquez/CineMark/blob/master/assets/snapshots/menu-gerente.png" alt="Menú del Gerente en consola."/>
+<h4>Menú del Boletero en consola.</h4>
+<img src="https://github.com/victorManuelMarquez/CineMark/blob/master/assets/snapshots/menu-boletero.png" alt="Menú del Boletero en consola."/>
+<h4>Menú del Cliente en consola.</h4>
+<img src="https://github.com/victorManuelMarquez/CineMark/blob/master/assets/snapshots/menu-cliente.png" alt="Menú del Cliente en consola."/>
