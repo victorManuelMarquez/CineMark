@@ -45,3 +45,7 @@ El sistema al final fue realizado con una interfaz via consola de comandos e ing
   <li>Olvidé agregar la característica 2D/3D en la tabla de películas, además de que la misma repercuta en el precio del ticket.</li>
   <li>El cliente puede crearse su usuario, exista o no dicha opción permanecerá ahí. Esto se hizo así para la fase de producción y no se lo removió de la versión "final". Tendría más sentido que el usuario y contraseña sean el dni del cliente como valor por defecto para luego modificarlo (Para futuras versiones se corregirá).</li>
 </ol>
+
+&copy; 2022.<br>
+Desarrollado por : Víctor Manuel Márquez.<br>
+Este programa fue desarrollado sin fines de lucro y solo para presentación académica. No hay intención de su aplicación formal en un entorno real.
