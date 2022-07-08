@@ -35,6 +35,10 @@ El sistema al final fue realizado con una interfaz via consola de comandos e ing
 <h4>Menú del Cliente en consola.</h4>
 <img src="https://github.com/victorManuelMarquez/CineMark/blob/master/assets/snapshots/menu-cliente.png" alt="Menú del Cliente en consola."/>
 
+# DER
+<h4>Diagrama Entidad Relación de la base de datos.</h4>
+<img src="https://github.com/victorManuelMarquez/CineMark/blob/master/assets/snapshots/DER.bmp" alt="Diagrama Entidad Relación de la base de datos."/>
+
 # Nota
 Para acceder al sistema (los menús) debe existir previamente el usuario y cliente (persona) en la base de datos. De lo contrario jamás se podrá acceder.
 
