@@ -35,6 +35,9 @@ El sistema al final fue realizado con una interfaz via consola de comandos e ing
 <h4>Menú del Cliente en consola.</h4>
 <img src="https://github.com/victorManuelMarquez/CineMark/blob/master/assets/snapshots/menu-cliente.png" alt="Menú del Cliente en consola."/>
 
+# Nota
+Para acceder al sistema (los menús) debe existir previamente el usuario y cliente (persona) en la base de datos. De lo contrario jamás se podrá acceder.
+
 ## Erratas:
 <ol>
   <li>Para que un usuario exista debe existir antes una persona, registrada en la base de datos como cliente. Sin importar si es un empleado o el administrador.
