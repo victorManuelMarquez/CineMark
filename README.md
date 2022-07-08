@@ -28,4 +28,7 @@ Notas:
 
 Solución:
 
+El sistema al final fue realizado con una interfaz via consola de comandos e ingresando mediante login para acceder a la info, almacenada en la base de datos.
+
+Capturas:
 
