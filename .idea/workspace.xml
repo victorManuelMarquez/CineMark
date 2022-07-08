@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8bbba397-4e1f-4f0b-90b0-3b79bac61dc5" name="Changes" comment="Sistema inicial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/code/cinemark_bd.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/code/cinemark_bd.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656968283853</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Sistema inicial">
+      <created>1657219936933</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657219936934</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
